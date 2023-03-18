@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_banners",
+  "info": {
+    "singularName": "home-banner",
+    "pluralName": "home-banners",
+    "displayName": "Home Banner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "produk": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::produk.produk"
+    }
+  }
+}

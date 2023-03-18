@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hubungi_kamis",
+  "info": {
+    "singularName": "hubungi-kami",
+    "pluralName": "hubungi-kamis",
+    "displayName": "Hubungi Kami"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "subjek": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "isiPesan": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

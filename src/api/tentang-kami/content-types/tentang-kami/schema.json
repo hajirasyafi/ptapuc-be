@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "tentang_kamis",
+  "info": {
+    "singularName": "tentang-kami",
+    "pluralName": "tentang-kamis",
+    "displayName": "Tentang Kami",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namaPerusahaan": {
+      "type": "string",
+      "required": true
+    },
+    "tentang": {
+      "type": "customField",
+      "options": {
+        "preset": "markdown"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "foto": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "visi": {
+      "type": "customField",
+      "options": {
+        "preset": "markdown"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "misi": {
+      "type": "customField",
+      "options": {
+        "preset": "markdown"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

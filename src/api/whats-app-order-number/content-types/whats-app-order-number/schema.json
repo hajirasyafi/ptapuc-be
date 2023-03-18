@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "whats_app_order_numbers",
+  "info": {
+    "singularName": "whats-app-order-number",
+    "pluralName": "whats-app-order-numbers",
+    "displayName": "WhatsApp Order Number",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "nomor": {
+      "type": "biginteger",
+      "required": true
+    },
+    "isiPesan": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produk_best_sellers",
+  "info": {
+    "singularName": "produk-best-seller",
+    "pluralName": "produk-best-sellers",
+    "displayName": "Produk Best Seller",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "produk": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::produk.produk"
+    },
+    "Urutan": {
+      "required": true,
+      "unique": true,
+      "default": 0,
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+/**
+ * mesin-merek router
+ */
+
+import { factories } from '@strapi/strapi';
+
+export default factories.createCoreRouter('api::mesin-merek.mesin-merek');

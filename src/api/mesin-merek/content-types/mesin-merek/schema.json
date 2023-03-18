@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mesin_mereks",
+  "info": {
+    "singularName": "mesin-merek",
+    "pluralName": "mesin-mereks",
+    "displayName": "Mesin Merek"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

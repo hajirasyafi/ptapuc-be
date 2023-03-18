@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "klien_kamis",
+  "info": {
+    "singularName": "klien-kami",
+    "pluralName": "klien-kamis",
+    "displayName": "Klien Kami"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "gambar": {
+      "allowedTypes": ["images"],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

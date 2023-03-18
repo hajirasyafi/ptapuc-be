@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mesin_tipes",
+  "info": {
+    "singularName": "mesin-tipe",
+    "pluralName": "mesin-tipes",
+    "displayName": "Mesin Tipe"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "jumlah": {
+      "type": "integer",
+      "required": true
+    },
+    "mesin_merek": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mesin-merek.mesin-merek"
+    }
+  }
+}

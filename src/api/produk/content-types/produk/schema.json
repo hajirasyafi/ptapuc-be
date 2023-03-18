@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produks",
+  "info": {
+    "singularName": "produk",
+    "pluralName": "produks",
+    "displayName": "Produk",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namaProduk": {
+      "type": "string",
+      "required": true
+    },
+    "harga": {
+      "type": "integer"
+    },
+    "deskripsi": {
+      "type": "text",
+      "required": true
+    },
+    "foto": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "kategori": {
+      "type": "enumeration",
+      "enum": [
+        "Produk Jhon Kevin",
+        "Produk Seragam dan Kaos"
+      ],
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "namaProduk",
+      "required": true
+    },
+    "detail": {
+      "type": "customField",
+      "options": {
+        "preset": "markdown"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true
+    }
+  }
+}

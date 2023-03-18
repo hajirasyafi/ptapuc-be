@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "foto_produksis",
+  "info": {
+    "singularName": "foto-produksi",
+    "pluralName": "foto-produksis",
+    "displayName": "Foto Produksi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "foto": {
+      "allowedTypes": ["images"],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
